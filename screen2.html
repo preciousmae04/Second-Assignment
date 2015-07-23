@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+
+<aside>
+	<div class="dashboard"><h3>Dashboard</h3>
+
+	</div>
+	<div  class="user-icon">
+		<img src="css/images/user.png">
+	</div>
+	<nav>
+		<ul>
+
+			<li class="nav-menu"><h4><img src="css/images/workspace.png"><a href="#">My Workspaces</li>
+			<li class="nav-menu"><h4><img src="css/images/team.png">
+				<a href="#">My Team</a></li>
+				<div class="subs"><img src="css/images/add.png"><a href="#modal-member">Add members</div>
+						<div id="modal-member" class="modalDialog">
+							<div>
+								<a href="#close" title="Close" class="close">X</a>
+								<center><h2>My Team</h2></center>
+								<p>Team Name</p><input type="text" class="add-text" placeholder=" Enter name of the team">
+								<p>Invite members</p><input type="text" class="add-text" placeholder=" Add names">
+								<button type="button" class="btn btn-2 btn-2b">Invite Members</button>
+							</div>		
+						</div>
+			</li>
+			<li class="nav-menu"><h4><img src="css/images/project.png">
+				<a href="#">Project</a></li>
+				<div class="subs"><img src="css/images/add.png"><a href="#modal-project">Create a project</div>
+						<div id="modal-project" class="modalDialog">
+							<div>
+								<a href="#close" title="Close" class="close">X</a>
+								<center><h2>New Project</h2></center>
+								<p>Name of the project</p><input type="text" class="add-text" placeholder="  Name your project">
+								<p>Details</p><input type="text" class="add-text" placeholder="  Add details of the project">
+								<p>Add Team</p><input type="text" class="add-text" placeholder="  Add team or invite member">
+								<button type="button" class="btn btn-2 btn-2b">Add Project</button>
+							</div>		
+						</div>
+			</li>
+		</ul>
+	</nav>
+
+</aside>
+<section class="nav-bar">
+	<p class="nav-text">My Tasks</p>
+
+	<input class="search-here" type="search" placeholder="  Search Tasks">
+	<img src="css/images/search.png" class="search-icon" href="#">
+	
+	<a href="#modal-task">
+		<div class="compose" id="compose2"><img src="css/images/compose.png">Compose
+	</a>
+
+	<div id="modal-task" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<p>My Task</p>
+			<input type="text" class="add-text" placeholder="  Enter task details here ...">
+			<input type="date" class="input-date" id="in-date" placeholder=""><p class="due-date">Due Date</p>
+			<input type="text" class="input-prio" placeholder="  Set Priority"><p class="prio">Set Priority</p>
+			<button type="button" class="btn btn-2 btn-2b">Add Task</button>
+		</div>
+				
+	</div>
+
+	</div>
+	<a href="#"><img class="noti" id="noti2" src="css/images/notibell.png" alt="Notification"></a>
+	<a href="#"><img class="noti" id="settings" src="css/images/settings.png" alt="Settings"></a>
+	
+</section>
+<section class="sort-task">
+	<p class="sort-header" id="sort-header2">View Task</p>
+	<ul>
+		<a href="#"><li class="sort">		
+		<span>All To-Do</span></a>
+		</li>
+		<li class="sort">
+			<a href="#">
+			<span>By Priority</span></a>
+			<ul class="dropdown">
+						<li><a href="#">High</a></li>
+						<li><a href="#">Medium</a></li>
+						<li><a href="#">Low</a></li>
+					</ul>
+		</li>	
+		<li class="sort">
+			<a href="#">
+			<span>By Deadline</span></a>
+			<ul class="dropdown">
+						<li><a href="#">Ascending</a></li>
+						<li><a href="#">Descending</a></li>
+					</ul>
+		</li>
+		<li class="sort">
+			<a href="#">
+			<span>All Completed Task</span></a>
+		</li>
+		
+		<li class="sort">
+			<a href="#">
+			<span>Today's Tasks</span></a>
+		</li>
+		<li class="sort">
+			<a href="#">
+			<span>Tomorrows Tasks</span></a>
+		</li>
+		<li class="sort">
+			<a href="#">
+			<span>Next 7 Day Tasks</span></a>
+		</li>
+		
+	</ul>
+
+		<p class="sort-header" id="sort-header2">View Team Tasks</p>
+	<ul>
+	    <li class="sort">
+			<a href="#">
+			<span>All Team Tasks</span></a>
+		</li>
+		<li class="sort">
+			<a href="#">
+			<span>Assigned to me</span></a>
+		</li>
+	    <li class="sort">
+			<a href="#">
+			<span>Assigned to others</span></a>
+		</li>
+</section>
+<section class="main-content">
+
+		<input type="text" placeholder="Add Task" class="new-task">
+		<input type="date" class="set-date">
+		<div class="box"></div>
+			<p class="task-dtl">Submit on github the HTML Files.</p>
+			<p class="task-date">Thu, 22 July 2015</p>
+			<a href="#"><img src="css/images/settings2.png" class="settings-icon"></a>
+		<div class="box"></div>
+			<p class="task-dtl">Submit on github the HTML Files.</p>
+			<p class="task-date">Thu, 30 July 2015</p>
+			<a href="#"><img src="css/images/settings2.png" class="settings-icon">	
+
+
+</section>
+</body>
+</html>
